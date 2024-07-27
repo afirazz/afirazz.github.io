@@ -1,8 +1,9 @@
 #  Afira Zulkifli - Portfolio Task
 ​
-[My portfolio site](https://afirazz.github.io/)
+[My portfolio site is linked here!](https://afirazz.github.io/)
 ​
 ## Project Requirements
+
 
 ### Content
  Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
@@ -15,8 +16,8 @@
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
 - [ ] At least 2 web pages.
-- [ ] Version controlled with Git
-- [ ] Deployed on GitHub pages.
+- [x] Version controlled with Git
+- [x] Deployed on GitHub pages.
 - [ ] Implements responsive design principles.
 - [ ] Uses semantic HTML.
 
