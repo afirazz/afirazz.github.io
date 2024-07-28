@@ -1,10 +1,10 @@
-/* ---Base HTML Styles--- */
+/* --- BASE COLOURS --- */
 
 :root {
 /* insert colour scheme here */
 }
 
-/* ---CSS Reset--- */
+/* --- CSS RESET --- */
 html {
     /* box-sizing: border-box;
     font-size: 16px;
@@ -51,9 +51,20 @@ html {
     font: inherit;
   }
 
-/* ---Utilities--- */
+/* --- UTILITIES --- */
 
 .display-none {
     display: none;
   }
 
+
+
+
+.socials-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.socials-icon:hover {
+    transform: translate3d(0, -0.2em, 0);
+}
