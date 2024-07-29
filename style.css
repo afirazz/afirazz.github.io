@@ -1,11 +1,19 @@
-/* --- BASE COLOURS --- */
+/* --- FONT --- */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* --- BASE COLOURS --- */
 :root {
-/* insert colour scheme here */
-}
+    --green: #606C38;
+    --darkgreen: #283618;
+    --beige: #FEFAE0;
+    --brown: #DDA15E;
+    --darkbrown: #BC6C25;}
 
 /* --- CSS RESET --- */
-html {
+html, body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    background-color: var(--beige);
     /* box-sizing: border-box;
     font-size: 16px;
     font-family: "Inter", sans-serif;
@@ -17,7 +25,11 @@ html {
   *:after {
     /* box-sizing: inherit; */
   }
-  h1,
+  h1 {
+    font-family: 'Catamaran', serif;
+    font-weight: bold;
+    font-size: 26px;
+  }
   h2,
   h3,
   h4,
@@ -57,14 +69,77 @@ html {
     display: none;
   }
 
+/* --- HEADER --- */
+
+header {
+    background-color: var(--darkgreen);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+/* --- HERO --- */
+section.hero {
+    display: flex;
+    justify-content: center;
+    background-color: var(--green);
+}
+
+.my-intro {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.my-intro {
+    color: var(--brown)
+}
+
+p.intro-tagline {
+    color:var(--beige)
+}
 
 .socials-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%);
 }
 
 .socials-icon:hover {
     transform: translate3d(0, -0.2em, 0);
+}
+
+/* --- ABOUT ME --- */
+
+section.about-me {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+article.about-me-text {
+    max-width: 600px;
+}
+
+.about-me-pic {
+    max-height: 600px;
+    width: auto;
+}
+
+/* --- MY PROJECTS --- */
+section.my-projects {
+    background-color: var(--brown);
+}
+
+/* --- CONTACT FORM --- */
+section.contact-form {
+    background-color: var(--darkbrown);
+}
+
+/* --- FOOTER --- */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: darkred;
 }
