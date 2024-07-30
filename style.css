@@ -7,13 +7,28 @@
     --darkgreen: #283618;
     --beige: #FEFAE0;
     --brown: #DDA15E;
-    --darkbrown: #BC6C25;}
+    --darkbrown: #BC6C25;
+    --brand: #606C38;
+    --brand-alt: #283618;
+    --action: ;
+    --action-alt: ;
+    --base-0: #FEFAE0;
+    --base-100: #e7dfc4;
+    --base-200: #d1c5a7;
+    --base-300: #bcaa8c;
+    --base-400: #a79172;
+    --base-500: #937859;
+    --base-600: #7f5f42;
+    --base-700: #6c482d;
+    --base-800: #583119;
+    --base-900: #451a03;
+  }
 
 /* --- CSS RESET --- */
 html, body {
     font-family: 'Fira Sans', sans-serif;
     font-size: 16px;
-    background-color: var(--beige);
+    background-color: var(--base-0);
     /* box-sizing: border-box;
     font-size: 16px;
     font-family: "Inter", sans-serif;
@@ -72,18 +87,55 @@ html, body {
 /* --- HEADER --- */
 
 header {
-    background-color: var(--darkgreen);
+    background-color: var(--brand-alt);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.hamburger-icon {
+  height: 50px;
+  filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%);
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--black);
+  display: block;
+  padding: 4px 16px;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-nav a {
+      text-decoration: none;
+      font-size: larger;
+      color: var(--base);
+  }
+
+  .desktop-nav {
+      display: inline-block;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+}
 
 /* --- HERO --- */
 section.hero {
     display: flex;
     justify-content: center;
-    background-color: var(--green);
+    flex-wrap: wrap;
+    background-color: var(--brand);
+}
+
+.headshot {
+  max-height: 250px;
+  width: auto;
 }
 
 .my-intro {
@@ -92,12 +144,12 @@ section.hero {
     align-items: center;
 }
 
-h1.my-intro {
+.hero h1 {
     color: var(--brown)
 }
 
 p.intro-tagline {
-    color:var(--beige)
+    color:var(--base-0)
 }
 
 .socials-icon {
@@ -115,6 +167,7 @@ p.intro-tagline {
 section.about-me {
     margin: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -130,16 +183,53 @@ article.about-me-text {
 /* --- MY PROJECTS --- */
 section.my-projects {
     background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* --- CONTACT FORM --- */
-section.contact-form {
-    background-color: var(--darkbrown);
+.contact-form {
+    background-color: var(--base-700);
+    padding: 48px 16px;
+    color: var(--base-0);
+}
+
+.contact-form input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.contact-form textarea {
+  display: block;
+  width: 90%;
+  padding: 8px;
+}
+
+.contact-form label {
+  display: block;
+  width: 100%;
+}
+
+.contact-form h2 {
+  color: var(--base-0);
+  margin-bottom: 16px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: var(--action);
+  border: 0;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 /* --- FOOTER --- */
 footer{
     display: flex;
     justify-content: center;
-    background-color: darkred;
+    color: var(--base-0);
+    background-color: var(--base-900);
 }
