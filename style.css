@@ -1,34 +1,28 @@
 /* --- FONT --- */
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --heading-font: Playfair Display;
+  --body-font: Fira Sans;
+}
 
 /* --- BASE COLOURS --- */
 :root {
-    --green: #606C38;
-    --darkgreen: #283618;
-    --beige: #FEFAE0;
-    --brown: #DDA15E;
-    --darkbrown: #BC6C25;
-    --brand: #606C38;
-    --brand-alt: #283618;
-    --action: ;
-    --action-alt: ;
-    --base-0: #FEFAE0;
-    --base-100: #e7dfc4;
-    --base-200: #d1c5a7;
-    --base-300: #bcaa8c;
-    --base-400: #a79172;
-    --base-500: #937859;
-    --base-600: #7f5f42;
-    --base-700: #6c482d;
-    --base-800: #583119;
-    --base-900: #451a03;
-  }
+  --white: #FCF6EE;
+  --cream: #EECE9F;
+  --lightbrown: #C2986F;
+  --brown: #673A14;
+  --darkbrown: #44270D;
+  --green: #606C38;
+  --darkgreen: #283618;
+}
 
 /* --- CSS RESET --- */
 html, body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--body-font), sans-serif;
     font-size: 16px;
-    background-color: var(--base-0);
+    background-color: var(--cream);
+    /* color: #F9EDDC; */
     /* box-sizing: border-box;
     font-size: 16px;
     font-family: "Inter", sans-serif;
@@ -41,12 +35,19 @@ html, body {
     /* box-sizing: inherit; */
   }
   h1 {
-    font-family: 'Catamaran', serif;
-    font-weight: bold;
-    font-size: 26px;
+    font-family: var(--heading-font), serif;
+    font-size: 48px;
   }
-  h2,
-  h3,
+  h2 {
+    font-family: var(--heading-font), serif;
+    font-size: 36px;
+    color: var(--darkbrown);
+  }
+  h3{
+    font-family: var(--heading-font), serif;
+    font-size: 24px;
+    color: var(--darkbrown);
+  }
   h4,
   h5,
   h6 {
@@ -87,20 +88,23 @@ html, body {
 /* --- HEADER --- */
 
 header {
-    background-color: var(--brand-alt);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monogram {
+  height: 50px;
 }
 
 .hamburger-icon {
-  height: 50px;
+  height: 40px;
   filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%);
 }
 
 .mobile-nav a {
   text-decoration: none;
-  color: var(--black);
   display: block;
   padding: 4px 16px;
 }
@@ -113,7 +117,6 @@ header {
   .desktop-nav a {
       text-decoration: none;
       font-size: larger;
-      color: var(--base);
   }
 
   .desktop-nav {
@@ -127,15 +130,17 @@ header {
 
 /* --- HERO --- */
 section.hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--brand);
+  background-color: var(--green);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .headshot {
   max-height: 250px;
   width: auto;
+  border-radius: 50%;
 }
 
 .my-intro {
@@ -145,18 +150,21 @@ section.hero {
 }
 
 .hero h1 {
-    color: var(--brown)
+    color: var(--cream);
 }
 
 p.intro-tagline {
-    color:var(--base-0)
+    color: var(--white);
 }
 
 .socials-icon {
     width: 30px;
     height: 30px;
-    filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%);
-}
+    /* filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%); */
+    /* filter: invert(24%) sepia(10%) saturate(4122%) hue-rotate(347deg) brightness(92%) contrast(90%); BROWN*/
+    /* filter: invert(62%) sepia(40%) saturate(361%) hue-rotate(348deg) brightness(94%) contrast(89%); LIGHT BROWN */
+    filter: invert(86%) sepia(21%) saturate(580%) hue-rotate(342deg) brightness(97%) contrast(92%);
+  }
 
 .socials-icon:hover {
     transform: translate3d(0, -0.2em, 0);
@@ -165,35 +173,55 @@ p.intro-tagline {
 /* --- ABOUT ME --- */
 
 section.about-me {
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-article.about-me-text {
-    max-width: 600px;
+.about-me-text h2 {
+  padding: 0px 16px;
+  /* margin: 5px 10px;   */
+}
+
+.about-me-text p {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 32px 16px;
+  border-radius: 10px;
+  margin: 5px 10px;    
 }
 
 .about-me-pic {
-    max-height: 600px;
-    width: auto;
+  max-height: 600px;
+  width: auto;
+  border-radius: 50%;
 }
 
 /* --- MY PROJECTS --- */
 section.my-projects {
-    background-color: var(--brown);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--lightbrown);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  background-color: var(--cream);
+  text-align: center;
+  width: 70%;
+  padding: 32px 16px;
+  border-radius: 10px;
+  margin: 5px 10px;  
 }
 
 /* --- CONTACT FORM --- */
 .contact-form {
-    background-color: var(--base-700);
+    background-color: var(--brown);
     padding: 48px 16px;
-    color: var(--base-0);
+    color: var(--cream);
 }
 
 .contact-form input {
@@ -215,12 +243,14 @@ section.my-projects {
 }
 
 .contact-form h2 {
-  color: var(--base-0);
+  color: var(--cream);
   margin-bottom: 16px;
 }
 
 .contact-form input[type="submit"] {
-  background-color: var(--action);
+  background-color: var(--darkgreen);
+  color: var(--cream);
+  width: 90%;
   border: 0;
   margin-top: 8px;
   cursor: pointer;
@@ -228,8 +258,9 @@ section.my-projects {
 
 /* --- FOOTER --- */
 footer{
-    display: flex;
-    justify-content: center;
-    color: var(--base-0);
-    background-color: var(--base-900);
+  color: var(--cream);
+  background-color: var(--darkbrown);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
 }
