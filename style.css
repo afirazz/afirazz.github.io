@@ -15,80 +15,79 @@
   --darkbrown: #44270D;
   --green: #606C38;
   --darkgreen: #283618;
+  --creamfilter: brightness(0) saturate(100%) invert(86%) sepia(21%) saturate(580%) hue-rotate(342deg) brightness(97%) contrast(92%);
+  --darkbrownfilter: brightness(0) saturate(100%) invert(15%) sepia(13%) saturate(3290%) hue-rotate(350deg) brightness(94%) contrast(93%);
 }
 
 /* --- CSS RESET --- */
-html, body {
-    font-family: var(--body-font), sans-serif;
-    font-size: 16px;
-    background-color: var(--cream);
-    /* color: #F9EDDC; */
-    /* box-sizing: border-box;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    color: var(--black);
-    scroll-behavior: smooth; */
-  }
-  *,
-  *:before,
-  *:after {
-    /* box-sizing: inherit; */
-  }
-  h1 {
-    font-family: var(--heading-font), serif;
-    font-size: 48px;
-  }
-  h2 {
-    font-family: var(--heading-font), serif;
-    font-size: 36px;
-    color: var(--darkbrown);
-  }
-  h3{
-    font-family: var(--heading-font), serif;
-    font-size: 24px;
-    color: var(--darkbrown);
-  }
-  h4,
-  h5,
-  h6 {
-    /* font-family: "Rubik", sans-serif; */
-  }
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ol,
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+html {
+  font-family: var(--body-font), sans-serif;
+  font-size: 16px;
+  background-color: var(--cream);
+  color: var(--darkbrown);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-  ol,
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  input,
-  button,
-  textarea,
-  select {
-    font: inherit;
-  }
+header, footer {
+  padding: 10px 16px;  
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1 {
+  font-family: var(--heading-font), serif;
+  font-size: 48px;
+  padding: 8px 10px 6px;
+}
+h2 {
+  color: var(--darkbrown);
+  font-family: var(--heading-font), serif;
+  font-size: 36px;
+  padding: 6px 10px 16px;
+}
+h3 {
+  color: var(--darkbrown);
+  font-family: var(--heading-font), serif;
+  font-size: 24px;
+  padding: 8px 10px 8px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: auto;
+  height: auto;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+section {
+  padding: 40px 30px;
+}
 
 /* --- UTILITIES --- */
 
 .display-none {
-    display: none;
-  }
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline var(--darkbrown) solid 2px;
+}
 
 /* --- HEADER --- */
 
 header {
+  background-color: var(--cream);
   position: sticky;
+  top: 0;
+  /* border-bottom: 2px solid var(--darkbrown); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,9 +97,13 @@ header {
   height: 50px;
 }
 
+header button {
+  all: unset;
+}
+
 .hamburger-icon {
   height: 40px;
-  filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%);
+  filter: var(--darkbrownfilter);
 }
 
 .mobile-nav a {
@@ -131,65 +134,54 @@ header {
 /* --- HERO --- */
 section.hero {
   background-color: var(--green);
-  padding: 40px 20px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headshot {
   max-height: 250px;
-  width: auto;
+  max-width: 250px;
   border-radius: 50%;
 }
 
-.my-intro {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.intro-text {
+  text-align: center;
 }
 
 .hero h1 {
-    color: var(--cream);
+  color: var(--cream);
 }
 
 p.intro-tagline {
-    color: var(--white);
+  font-size: 18px;
+  color: var(--white);
+  margin: 0px 10px 15px 10px;
 }
 
 .socials-icon {
-    width: 30px;
-    height: 30px;
-    /* filter: invert(95%) sepia(6%) saturate(1170%) hue-rotate(326deg) brightness(107%) contrast(99%); */
-    /* filter: invert(24%) sepia(10%) saturate(4122%) hue-rotate(347deg) brightness(92%) contrast(90%); BROWN*/
-    /* filter: invert(62%) sepia(40%) saturate(361%) hue-rotate(348deg) brightness(94%) contrast(89%); LIGHT BROWN */
-    filter: invert(86%) sepia(21%) saturate(580%) hue-rotate(342deg) brightness(97%) contrast(92%);
-  }
+  width: 30px;
+  height: 30px;
+  filter: var(--darkbrownfilter);
+}
 
 .socials-icon:hover {
-    transform: translate3d(0, -0.2em, 0);
+  transform: translate3d(0, -0.2em, 0);
 }
 
 /* --- ABOUT ME --- */
 
 section.about-me {
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.about-me-text h2 {
-  padding: 0px 16px;
-  /* margin: 5px 10px;   */
-}
+} 
 
 .about-me-text p {
   background-color: var(--green);
   color: var(--white);
   padding: 32px 16px;
   border-radius: 10px;
-  margin: 5px 10px;    
 }
 
 .about-me-pic {
@@ -201,7 +193,6 @@ section.about-me {
 /* --- MY PROJECTS --- */
 section.my-projects {
   background-color: var(--lightbrown);
-  padding: 40px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -211,29 +202,28 @@ section.my-projects {
 .project-card {
   background-color: var(--cream);
   text-align: center;
-  width: 70%;
-  padding: 32px 16px;
+  width: 80%;
   border-radius: 10px;
+  padding: 32px 16px;
   margin: 5px 10px;  
 }
 
 /* --- CONTACT FORM --- */
-.contact-form {
+section.contact-form {
     background-color: var(--brown);
-    padding: 48px 16px;
     color: var(--cream);
 }
 
 .contact-form input {
   display: block;
-  width: 90%;
+  width: 95%;
   padding: 8px;
   margin-bottom: 16px;
 }
 
 .contact-form textarea {
   display: block;
-  width: 90%;
+  width: 95%;
   padding: 8px;
 }
 
@@ -245,22 +235,26 @@ section.my-projects {
 .contact-form h2 {
   color: var(--cream);
   margin-bottom: 16px;
+  width: 100%;
+  text-align: center;
 }
 
 .contact-form input[type="submit"] {
   background-color: var(--darkgreen);
   color: var(--cream);
-  width: 90%;
+  width: 101%;
   border: 0;
   margin-top: 8px;
   cursor: pointer;
 }
 
 /* --- FOOTER --- */
-footer{
+footer {
   color: var(--cream);
   background-color: var(--darkbrown);
   font-size: 14px;
+  text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
