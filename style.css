@@ -97,19 +97,42 @@ header {
   height: 50px;
 }
 
-header button {
-  all: unset;
-}
-
 .hamburger-icon {
   height: 40px;
   filter: var(--darkbrownfilter);
+  cursor: pointer;
+}
+
+.mobile-nav {
+  background-color: var(--cream);
+  text-align: right;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s ease-out;
 }
 
 .mobile-nav a {
+  font-family: var(--heading-font);
+  color: var(--darkbrown);
   text-decoration: none;
+  font-size: larger;
   display: block;
   padding: 4px 16px;
+}
+
+.mobile-nav a:hover {
+  background-color: var(--lightbrown);
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ .mobile-nav{
+  max-height: 100%;
 }
 
 .desktop-nav {
@@ -117,13 +140,21 @@ header button {
 }
 
 @media (min-width: 768px) {
-  .desktop-nav a {
-      text-decoration: none;
-      font-size: larger;
+  .desktop-nav {
+    display: inline-block;
   }
 
-  .desktop-nav {
-      display: inline-block;
+  .desktop-nav a {
+    font-family: var(--heading-font);
+    color: var(--darkbrown);
+    text-decoration: none;
+    font-size: larger;
+    display: block;
+    padding: 4px 16px;
+  }
+
+  .desktop-nav a:hover {
+    background-color: var(--lightbrown);
   }
 
   .hamburger-icon {
@@ -185,6 +216,8 @@ section.about-me {
 }
 
 .about-me-pic {
+  /* position: relative;
+  bottom: 50px; */
   max-height: 600px;
   width: auto;
   border-radius: 50%;
@@ -199,13 +232,17 @@ section.my-projects {
   align-items: center;
 }
 
-.project-card {
+article.project-card {
   background-color: var(--cream);
   text-align: center;
   width: 80%;
   border-radius: 10px;
   padding: 32px 16px;
   margin: 5px 10px;  
+}
+
+.project-image {
+  max-width: 250px;
 }
 
 /* --- CONTACT FORM --- */
