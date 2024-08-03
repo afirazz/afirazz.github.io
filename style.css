@@ -81,7 +81,7 @@ section {
   text-decoration: underline var(--darkbrown) solid 2px;
 }
 
-/* --- HEADER --- */
+/* --- HEADER ON MOBILE --- */
 
 header {
   background-color: var(--cream);
@@ -139,9 +139,15 @@ header {
   display: none;
 }
 
+/* HEADER ON DESKTOP */
+
 @media (min-width: 768px) {
-  .desktop-nav {
-    display: inline-block;
+  .desktop-nav { 
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
   }
 
   .desktop-nav a {
@@ -162,7 +168,7 @@ header {
   }
 }
 
-/* --- HERO --- */
+/* --- HERO ON MOBILE --- */
 section.hero {
   background-color: var(--green);
   display: flex;
@@ -178,6 +184,7 @@ section.hero {
 
 .intro-text {
   text-align: center;
+  max-width: 330px;
 }
 
 .hero h1 {
@@ -200,7 +207,17 @@ p.intro-tagline {
   transform: translate3d(0, -0.2em, 0);
 }
 
-/* --- ABOUT ME --- */
+/* --- HERO ON DESKTOP --- */
+
+@media (min-width: 768px) {
+  section.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* --- ABOUT ME ON MOBILE --- */
 
 section.about-me {
   display: flex;
@@ -218,12 +235,32 @@ section.about-me {
 .about-me-pic {
   /* position: relative;
   bottom: 50px; */
-  max-height: 600px;
+  max-height: 400px;
   width: auto;
   border-radius: 50%;
 }
 
-/* --- MY PROJECTS --- */
+/* --- ABOUT ME ON DESKTOP --- */
+
+@media (min-width: 768px) {
+  section.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me-text {
+    width: 400px;
+  }
+
+  .about-me-pic {
+    align-self: flex-end;
+  }
+}
+
+/* --- MY PROJECTS ON MOBILE --- */
+
 section.my-projects {
   background-color: var(--lightbrown);
   display: flex;
@@ -235,7 +272,7 @@ section.my-projects {
 article.project-card {
   background-color: var(--cream);
   text-align: center;
-  width: 80%;
+  max-width: 350px;
   border-radius: 10px;
   padding: 32px 16px;
   margin: 5px 10px;  
@@ -245,10 +282,36 @@ article.project-card {
   max-width: 250px;
 }
 
-/* --- CONTACT FORM --- */
+/* --- MY PROJECTS ON DESKTOP --- */
+
+@media (min-width: 768px) {
+  div.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+  }
+}
+
+/* --- CONTACT FORM--- */
 section.contact-form {
     background-color: var(--brown);
     color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h2 {
+  color: var(--cream);
+  margin-bottom: 16px;
+  width: 350px;
+  text-align: center;
+}
+
+.contact-form form {
+  width: 350px;
 }
 
 .contact-form input {
@@ -267,13 +330,6 @@ section.contact-form {
 .contact-form label {
   display: block;
   width: 100%;
-}
-
-.contact-form h2 {
-  color: var(--cream);
-  margin-bottom: 16px;
-  width: 100%;
-  text-align: center;
 }
 
 .contact-form input[type="submit"] {
