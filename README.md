@@ -48,20 +48,20 @@ I've used the [Responsively app](https://responsively.app/) to demonstrate the r
 - Tablet: iPad (768 x 1024)
 - Desktop: MacBook Pro (1440x900)
 
-####  Main Page 
-![A video scrolling through the main page of my portfolio website.](./relative_path_to_file)
+To demonstrate the hidden mobile navigation menu and the hover styles, I did a screen recording using the Windows Snipping Tool application and converted the MP4 file to a GIF file using the free online [Adobe Express converter](https://www.adobe.com/express/feature/video/convert/mp4-to-gif).
 
-Hero section:
-![The Hero section of the main page of my portfolio website.](./relative_path_to_file)
+####  Main Page 
+Header & Hero section:
+![The Hero section of the main page of my portfolio website.](./screenshots/header-hero-section.png)
 
 About Me section:
-![The About Me section of the main page of my portfolio website.](./relative_path_to_file)
+![The About Me section of the main page of my portfolio website.](./screenshots/about-me-section.png)
 
 My Projects section:
-![The My Projects section of the main page of my portfolio website.](./relative_path_to_file)
+![The My Projects section of the main page of my portfolio website.](./screenshots/my-projects-section.png)
 
 Contact Me & Footer sections:
-![The Contact Me and Footer sections of the main page of my portfolio website.](./relative_path_to_file)
+![The Contact Me and Footer sections of the main page of my portfolio website.](./screenshots/contact-footer-section.png)
 
 #### Mobile Navigation Menu
 ![A video showing a hidden mobile navigation menu that appears when the hamburger icon is clicked.](./screenshots/mobile-nav-menu.gif)
@@ -69,9 +69,6 @@ Contact Me & Footer sections:
 #### Hover Styles
 ![A video showing the background of the navigation links in the header turning light brown when the cursor hovers over it in desktop view.](./screenshots/desktop-nav-hover.gif)
 ![A video showing the social media bouncing up when the cursor hovers over it.](./screenshots/social-icon-bounce.gif)
-
-#### Project Template Page
-![The project template placeholder page of my portfolio website.](./relative_path_to_file)
 
 ### Future Improvements
 I'm really happy with how my portfolio website has turned out but I also love continous improvement! Below I've listed some of the content and technical improvements I'd like to make in future iterations of my portfolio website.
