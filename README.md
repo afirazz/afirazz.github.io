@@ -20,13 +20,12 @@ In honour of my roots in soil science (see what I did there hehe), I've chosen a
 - [x] Links to external sites, e.g. GitHub and LinkedIn.
 ​
 ### Technical
-> Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
+
 My portfolio website has 2 web pages: a main landing page and projects page that is currently a placeholder template for when I have projects to feature on my portfolio. I have version controlled my portfolio website using Git and the version history of my files can be viewed on my GitHub repository [here](https://github.com/afirazz/afirazz.github.io). My portfolio website has been deployed on GitHub pages and can be view through [this link](https://afirazz.github.io/). 
 
-RESPONSIVENESS
-Nav - different for mobile and desktop
-General layout - typically up to two elements next to each other (text and image) on desktop, everything condenses to one element in a column on mobile
+I designed my website mobile-first and used media queries to make my website responsive to bigger screen sizes. On desktop screen sizes, my navigation links are listed side-by-side in a row in the header and on mobile screen sizes, my navigation links are hidden until the hamburger icon is clicked, upon which the links will appear from top-to-bottom in a column underneath the hamburger icon. Full credit to [this tutorial by Ivy Walobwa from LogRocket](https://blog.logrocket.com/create-responsive-mobile-menu-css-without-javascript/) which I used to create a responsive mobile menu purely with CSS. You can see this in action [here](#mobile-navigation-menu)! The general layout of my website is also responsive; on desktop screen sizes, there are typically up to two containers next to each other side-by-side (e.g. an image and a box of text) and on mobile screen sizes, the layout condenses to one element on top of each other in a column. 
 
+Making my website accessible yet aesthetic is a key priority for me. I've used semantic HTML to structure my website and have chosen the Fira Sans as the font for my body text because it is easy to read (definitely not because the font has part of my name in it, not at all). The contrast of my colour choices throughout my website conforms to the Web Content Accessibility Guidelines (WCAG) Level AA according to the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
 - [x] At least 2 web pages.
 - [x] Version controlled with Git
@@ -36,7 +35,7 @@ General layout - typically up to two elements next to each other (text and image
 
 ### Bonus (optional)
 
-I added a little fun 3D transformation to the social media icons that make them bounce up on hover. I've also styled the navigation links in the header so that their background colour changes to light brown on hover on both mobile and desktop page sizes.
+I added a little fun 3D transformation to the social media icons that make them bounce up on hover. Full credit to [Fabrizio Bianchi](http://fabrizio.io/) for this because I saw it on his portfolio website and went "ooh YOINK mine now!". I've also styled the navigation links in the header so that their background colour changes to light brown on hover on both mobile and desktop page sizes. You can see how these work in a [screenshot](#hover-styles) below!
 
 - [x] Different styles for active, hover and focus states.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
@@ -48,7 +47,28 @@ I added a little fun 3D transformation to the social media icons that make them 
 > 
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
-####  image_title_goes_here 
+####  Main Page 
+![Put a description of your image here](./relative_path_to_file)
+
+Hero section:
+![Put a description of your image here](./relative_path_to_file)
+
+About Me section:
+![Put a description of your image here](./relative_path_to_file)
+
+My Projects section:
+![Put a description of your image here](./relative_path_to_file)
+
+Contact Me & Footer sections:
+![Put a description of your image here](./relative_path_to_file)
+
+#### Hover Styles
+![Put a description of your image here](./relative_path_to_file)
+
+#### Mobile Navigation Menu
+![Put a description of your image here](./relative_path_to_file)
+
+#### Project Template Page
 ![Put a description of your image here](./relative_path_to_file)
 
 ### Future Improvements
@@ -59,5 +79,6 @@ I'm really happy with how my portfolio website has turned out but I also love co
 - [ ] Add a focus state to the form input text boxes that change the background colour of the text box when they are selected.
 - [ ] Add a personalised acknowledgement of country to the footer.
 - [ ] Use Javascript somewhere on my website to do something cool!
-- [ ] Fix the header hyperlinks so that header doesn’t cut it off the headings.
-- [ ] Fix the bug where the social media icons cut through the header when you scroll past it on desktop sizes.
+- [ ] Review the use of padding and margins for all elements in the website and see if I can make it more consistent.
+- [ ] Fix the header hyperlinks and/or element spacing/sizing so that header doesn’t cut off part of the headings when it jumps to that section.
+- [ ] Fix the bug where the social media icons cut through the header when you scroll past it on desktop.
