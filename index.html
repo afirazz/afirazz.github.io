@@ -1,87 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="en" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afira Zulkifli</title>
+    <link rel="icon" type="image/x-icon" href="/img/az-monogram.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="en">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Afira Zulkifli</title>
-  <link rel="icon" type="image/x-icon" href="/img/az-monogram.svg">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html"
+        ><img
+          src="/img/az-monogram.svg"
+          alt="A green circle with the letters AZ in the middle in a cream colour."
+          class="monogram"
+      /></a>
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu">
+        <img
+          class="hamburger-icon"
+          src="img/hamburger.svg"
+          alt="Three horizontal lines, positioned one above the other."
+        />
+      </label>
 
-<body>
+      <!-- NAVIGATION -->
 
-  <!-- HEADER -->
-  <header>
-    <a href="index.html"><img src="/img/az-monogram.svg" alt="A green circle with the letters AZ in the middle in a cream colour." class="monogram"></a>
-    <input class="side-menu" type="checkbox" id="side-menu">
-    <label class="hamb" for="side-menu">
-      <img class="hamburger-icon" src="img/hamburger.svg" alt="Three horizontal lines, positioned one above the other.">
-    </label>
-    
-    
-    <!-- NAVIGATION -->
+      <nav class="mobile-nav">
+        <ul class="mobile-menu">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
 
-    <nav class="mobile-nav">
-      <ul class="mobile-menu">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-projects">My Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </nav>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-projects">My Projects</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-projects">My Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <img src="/img/headshot_square.jpg" alt="A headshot picture of Afira, a Malaysian woman with brown hair wearing rounded black-framed glasses and a bright yellow dress." class="headshot">
-      <article class="intro-text">
-        <h1 class="hero">Hi, I'm Afira!</h1>
-        <p class="intro-tagline">I'm an Environmental Geoscientist, a Data Enthusiast, and an Aspiring Developer from Boorloo/Perth, Western Australia</p>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <img
+          src="/img/headshot_square.jpg"
+          alt="A headshot picture of Afira, a Malaysian woman with brown hair wearing rounded black-framed glasses and a bright yellow dress."
+          class="headshot"
+        />
+        <div class="intro-text">
+          <h1>Hi, I'm Afira!</h1>
+          <p>
+            I'm an Environmental Geoscientist, a Data Enthusiast, and an
+            Aspiring Developer from Boorloo/Perth, Western Australia
+          </p>
 
-        <!-- SOCIAL MEDIA ICONS -->
-        <a href="https://www.linkedin.com/in/afira-zulkifli-2a3a56121/" title="LinkedIn">
-          <img class="socials-icon" src="/img/linkedin.svg" alt="LinkedIn logo: the word in inside a black square with rounded edges.">
-        </a>
-        <a href="https://github.com/afirazz" title="GitHub">
-          <img class="socials-icon" src="/img/github.svg" alt="Github logo: a black circle with the silhouette of a white cat, with one tentacle arm.">
-        </a>
-      </article>
-    </section>
+          <!-- SOCIAL MEDIA ICONS -->
+          <a
+            href="https://www.linkedin.com/in/afira-zulkifli-2a3a56121/"
+            title="LinkedIn"
+          >
+            <img
+              class="socials-icon"
+              src="/img/linkedin.svg"
+              alt="LinkedIn logo: the word in inside a black square with rounded edges."
+            />
+          </a>
+          <a href="https://github.com/afirazz" title="GitHub">
+            <img
+              class="socials-icon"
+              src="/img/github.svg"
+              alt="Github logo: a black circle with the silhouette of a white cat, with one tentacle arm."
+            />
+          </a>
+        </div>
+      </section>
 
-    <!-- ABOUT ME -->
-    <section class="about-me" id="about-me">
-      <article class="about-me-text">
-        <h2>About Me</h2>
-        <p>
-          I’m an environmental geoscientist with a passion for using data and technology to solve environmental problems. Soil and earth sciences are my first learning loves and I’m currently learning coding and immersing myself in the tech industry as a student in the She Codes Plus program.
-          <br><br>
-          Outside of work, I love looking at cool geological formations and pretty wildflowers while on hikes, reading sci-fi and fantasy books, playing amateur badminton, and gaming of all sorts (video games, board games, tabletop roleplaying games, you name it!)
-          <br><br>
-          My grey tabby cat Joanna is the joy of my life and you'll see pictures of her scattered throughout this website.
-        </p>
-      </article>
-      <img src="/img/sleepy-joanna-1.jpg" class="about-me-pic" alt="A happy sleepy grey tabby cat with a white fluffy belly turned upside-down semi-round.">
-    </section>
-    
-    <!-- MY PROJECTS -->
-     <section class="my-projects" id="my-projects">
+      <!-- ABOUT ME -->
+      <section class="about-me" id="about-me">
+        <article class="about-me-text">
+          <h2>About Me</h2>
+          <p>
+            I’m an environmental geoscientist with a passion for using data and
+            technology to solve environmental problems. Soil and earth sciences
+            are my first learning loves and I’m currently learning coding and
+            immersing myself in the tech industry as a student in the She Codes
+            Plus program.
+            <br /><br />
+            Outside of work, I love looking at cool geological formations and
+            pretty wildflowers while on hikes, reading sci-fi and fantasy books,
+            playing amateur badminton, and gaming of all sorts (video games,
+            board games, tabletop roleplaying games, you name it!)
+            <br /><br />
+            My grey tabby cat Joanna is the joy of my life and you'll see
+            pictures of her scattered throughout this website.
+          </p>
+        </article>
+        <img
+          src="/img/sleepy-joanna-1.jpg"
+          class="about-me-pic"
+          alt="A happy sleepy grey tabby cat with a white fluffy belly turned upside-down semi-round."
+        />
+      </section>
+
+      <!-- MY PROJECTS -->
+      <section class="my-projects" id="my-projects">
         <h2>My Projects</h2>
-      
+
         <div class="projects-container">
           <!-- PROJECT 1 -->
           <article class="project-card">
             <a href="projecttemplate.html"><h3>Coming Soon!</h3></a>
-            <a href="projecttemplate.html"><img src="img/joanna-1.jpg" alt="A grey tabby cat on a black and white blanket with her front legs stretched out." class="project-image"></a>
+            <a href="projecttemplate.html"
+              ><img
+                src="img/joanna-1.jpg"
+                alt="A grey tabby cat on a black and white blanket with her front legs stretched out."
+                class="project-image"
+            /></a>
             <ul class="project-language">
               <li>HTML</li>
               <li>CSS</li>
@@ -93,7 +134,12 @@
           <!-- PROJECT 2 -->
           <article class="project-card">
             <a href="projecttemplate.html"><h3>Coming Soon!</h3></a>
-            <a href="projecttemplate.html"><img src="img/joanna-2.jpg" alt="A grey tabby cat looking very regal while sitting on a green chair." class="project-image"></a>
+            <a href="projecttemplate.html"
+              ><img
+                src="img/joanna-2.jpg"
+                alt="A grey tabby cat looking very regal while sitting on a green chair."
+                class="project-image"
+            /></a>
             <ul class="project-language">
               <li>Python</li>
               <li>Git</li>
@@ -104,7 +150,12 @@
           <!-- PROJECT 3 -->
           <article class="project-card">
             <a href="projecttemplate.html"><h3>Coming Soon!</h3></a>
-            <a href="projecttemplate.html"><img src="img/joanna-3.jpg" alt="A grey tabby cat sleeping on her side showing her white fluffy belly and a pink paw on one of her legs." class="project-image"></a>
+            <a href="projecttemplate.html"
+              ><img
+                src="img/joanna-3.jpg"
+                alt="A grey tabby cat sleeping on her side showing her white fluffy belly and a pink paw on one of her legs."
+                class="project-image"
+            /></a>
             <ul class="project-language">
               <li>Django</li>
               <li>DRF</li>
@@ -116,39 +167,40 @@
           <!-- PROJECT 4 -->
           <article class="project-card">
             <a href="projecttemplate.html"><h3>Coming Soon!</h3></a>
-            <a href="projecttemplate.html"><img src="img/joanna-4.jpg" alt="Up-close photo of the head of a grey tabby cat." class="project-image"></a>
+            <a href="projecttemplate.html"
+              ><img
+                src="img/joanna-4.jpg"
+                alt="Up-close photo of the head of a grey tabby cat."
+                class="project-image"
+            /></a>
             <ul class="project-language">
               <li>React</li>
               <li>Javascript</li>
               <li>Git</li>
               <li>Github</li>
             </ul>
-        </article>
-      </div>
-    </section>
+          </article>
+        </div>
+      </section>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-form" id="contact-me">
-      <h2>Get in touch!</h2>
-      <form
-      action="https://formspree.io/f/movadprn"
-      method="POST"
-      >
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </main>
+      <!-- CONTACT FORM -->
+      <section class="contact-form" id="contact-me">
+        <h2>Get in touch!</h2>
+        <form action="https://formspree.io/f/movadprn" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© Afira Zulkifli 2024</p>
-  </footer>
-</body>
-
+    <!-- FOOTER -->
+    <footer>
+      <p>© Afira Zulkifli 2024</p>
+    </footer>
+  </body>
 </html>
