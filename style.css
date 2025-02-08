@@ -1,5 +1,5 @@
 /* --- BASE FONTS --- */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
   --heading-font: Playfair Display;
@@ -8,15 +8,17 @@
 
 /* --- BASE COLOURS --- */
 :root {
-  --white: #FCF6EE;
-  --cream: #EECE9F;
-  --lightbrown: #C2986F;
-  --brown: #673A14;
-  --darkbrown: #44270D;
-  --green: #606C38;
+  --white: #fcf6ee;
+  --cream: #eece9f;
+  --lightbrown: #c2986f;
+  --brown: #673a14;
+  --darkbrown: #44270d;
+  --green: #606c38;
   --darkgreen: #283618;
-  --creamfilter: brightness(0) saturate(100%) invert(86%) sepia(21%) saturate(580%) hue-rotate(342deg) brightness(97%) contrast(92%);
-  --darkbrownfilter: brightness(0) saturate(100%) invert(15%) sepia(13%) saturate(3290%) hue-rotate(350deg) brightness(94%) contrast(93%);
+  --creamfilter: brightness(0) saturate(100%) invert(86%) sepia(21%)
+    saturate(580%) hue-rotate(342deg) brightness(97%) contrast(92%);
+  --darkbrownfilter: brightness(0) saturate(100%) invert(15%) sepia(13%)
+    saturate(3290%) hue-rotate(350deg) brightness(94%) contrast(93%);
 }
 
 /* --- CSS RESET --- */
@@ -28,10 +30,20 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-header, footer {
-  padding: 10px 16px;  
+header,
+footer {
+  padding: 10px 16px;
 }
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -60,7 +72,10 @@ img {
   width: auto;
   height: auto;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 section {
@@ -110,7 +125,7 @@ header {
   right: 0;
   overflow: hidden;
   max-height: 0;
-  transition: max-height .5s ease-out;
+  transition: max-height 0.5s ease-out;
 }
 
 nav a {
@@ -130,7 +145,7 @@ nav a:hover {
   display: none;
 }
 
-.side-menu:checked ~ .mobile-nav{
+.side-menu:checked ~ .mobile-nav {
   max-height: 100%;
 }
 
@@ -141,7 +156,7 @@ nav a:hover {
 /* HEADER ON DESKTOP */
 
 @media (min-width: 768px) {
-  .desktop-nav { 
+  .desktop-nav {
     display: block;
   }
 
@@ -186,13 +201,14 @@ p.intro-tagline {
 }
 
 .socials-icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
   filter: var(--darkbrownfilter);
+  padding: 0px 5px;
 }
 
 .socials-icon:hover {
-  transform: translate3d(0, -0.2em, 0);
+  transform: translate3d(0, -0.3em, 0);
 }
 
 /* --- HERO ON DESKTOP --- */
@@ -210,7 +226,7 @@ section.about-me {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} 
+}
 
 .about-me-text {
   max-width: 400px;
@@ -258,7 +274,7 @@ article.project-card {
   width: 275px;
   border-radius: 10px;
   padding: 16px 16px;
-  margin: 10px 10px;  
+  margin: 10px 10px;
 }
 
 .project-image {
@@ -286,12 +302,12 @@ article.project-card {
 
 /* --- CONTACT FORM--- */
 section.contact-form {
-    background-color: var(--brown);
-    color: var(--cream);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--brown);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form h2 {
