@@ -112,6 +112,11 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  transition: box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  box-shadow: 0 0 0 2px var(--darkbrown);
 }
 
 .monogram {
@@ -360,7 +365,7 @@ section.contact-form {
 footer {
   color: var(--cream);
   background-color: var(--darkbrown);
-  font-size: 14px;
+  font-size: 0.9rem;
   text-align: center;
   display: flex;
   flex-direction: column;
