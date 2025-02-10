@@ -65,7 +65,7 @@ h1 {
 }
 h2 {
   font-size: 1.9rem;
-  padding: 6px 10px 16px;
+  padding: 15px 20px;
 }
 h3 {
   font-size: 1.4rem;
@@ -85,7 +85,7 @@ select {
   font: inherit;
 }
 section {
-  padding: 40px 30px;
+  padding: 40px 20px;
 }
 
 /* --- UTILITIES --- */
@@ -234,27 +234,27 @@ nav a:hover {
 
 /* --- ABOUT ME ON MOBILE --- */
 
-section.about-me {
+.about-me {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.about-me-text {
+.about-me article {
   max-width: 400px;
 }
 
-.about-me-text p {
+.about-me p {
   background-color: var(--green);
   color: var(--white);
-  padding: 32px 16px;
+  padding: 20px;
   border-radius: 10px;
 }
 
 .about-me-pic {
-  max-height: 400px;
-  max-width: 300px;
+  max-height: 500px;
+  /* max-width: 300px; */
   border-radius: 50%;
   margin: 10px;
 }
@@ -262,8 +262,11 @@ section.about-me {
 /* --- ABOUT ME ON DESKTOP --- */
 
 @media (min-width: 768px) {
-  section.about-me {
+  .about-me {
     flex-direction: row;
+  }
+
+  .about-me p {
   }
 
   .about-me-pic {
@@ -290,6 +293,10 @@ article.project-card {
   margin: 10px 10px;
 }
 
+.project-card p {
+  font-size: 0.9rem;
+}
+
 .project-image {
   max-width: 250px;
 }
@@ -298,7 +305,7 @@ article.project-card {
   border: 1px solid var(--darkbrown);
   border-radius: 20px;
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.65rem;
   padding: 3px 10px;
 }
 
@@ -314,7 +321,7 @@ article.project-card {
 }
 
 /* --- CONTACT FORM--- */
-section.contact-form {
+.contact-form {
   background-color: var(--brown);
   color: var(--cream);
   display: flex;
