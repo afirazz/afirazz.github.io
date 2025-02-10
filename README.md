@@ -83,7 +83,7 @@ I'm really happy with how my portfolio website has turned out but I also love co
 - [x] Have a brown bottom-border or box-shadow appear on the header as you scroll down the page. Currently it's difficult to differentiate the header when it's over the About Me section because they both have a cream background, however I don't want a bottom-border or box-shadow on the header when it's at the top of the page because you can see it clearly against the green background of the Hero section.
 - [ ] Experiment with more curved and natural lines in my website design, e.g. using CSS masking to make my profile picture be masked by a blob shape, or making the top and bottom borders of my sections wavy.
 - [ ] Add a focus state to the form input text boxes that change the background colour of the text box when they are selected.
-- [ ] Add a personalised acknowledgement of country to the footer.
+- [x] Add a personalised acknowledgement of country to the footer.
 - [x] Use Javascript somewhere on my website to do something cool!
 - [ ] Review the use of padding and margins for all elements in the website and see if I can make it more consistent.
 - [ ] Fix the header hyperlinks and/or element spacing/sizing so that header doesn’t cut off part of the headings when it jumps to that section.
