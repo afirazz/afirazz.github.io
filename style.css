@@ -68,8 +68,8 @@ h2 {
   padding: 15px 20px;
 }
 h3 {
-  font-size: 1.4rem;
-  padding: 8px 10px 8px;
+  font-size: 1.5rem;
+  padding: 0px 5px 10px 5px;
 }
 a {
   text-decoration: none;
@@ -253,7 +253,7 @@ nav a:hover {
 }
 
 .about-me-pic {
-  max-height: 500px;
+  max-height: 510px;
   /* max-width: 300px; */
   border-radius: 50%;
   margin: 10px;
@@ -266,9 +266,6 @@ nav a:hover {
     flex-direction: row;
   }
 
-  .about-me p {
-  }
-
   .about-me-pic {
     align-self: flex-end;
   }
@@ -276,7 +273,7 @@ nav a:hover {
 
 /* --- MY PROJECTS ON MOBILE --- */
 
-section.my-projects {
+.my-projects {
   background-color: var(--lightbrown);
   display: flex;
   flex-direction: column;
@@ -284,24 +281,27 @@ section.my-projects {
   align-items: center;
 }
 
-article.project-card {
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
   background-color: var(--cream);
   text-align: center;
-  width: 275px;
+  width: 295px;
   border-radius: 10px;
-  padding: 16px 16px;
-  margin: 10px 10px;
+  padding: 20px;
+  /* margin: 10px 10px; */
 }
 
 .project-card p {
   font-size: 0.9rem;
+  padding-top: 10px;
 }
 
-.project-image {
-  max-width: 250px;
-}
-
-.project-language li {
+.project-card li {
   border: 1px solid var(--darkbrown);
   border-radius: 20px;
   display: inline-block;
@@ -309,14 +309,39 @@ article.project-card {
   padding: 3px 10px;
 }
 
+.project-image {
+  max-width: 280px;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.project-button {
+  background-color: var(--brown);
+  color: var(--cream);
+  font-size: 0.9rem;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 0px var(--darkbrown);
+}
+
+.project-button:hover {
+  background-color: var(--darkbrown);
+}
+
 /* --- MY PROJECTS ON DESKTOP --- */
 
 @media (min-width: 768px) {
-  div.projects-container {
-    display: flex;
+  .projects-container {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 700px;
+    max-width: 1000px;
   }
 }
 
@@ -346,12 +371,14 @@ article.project-card {
   width: 95%;
   padding: 8px;
   margin-bottom: 16px;
+  border-radius: 10px;
 }
 
 .contact-form textarea {
   display: block;
   width: 95%;
   padding: 8px;
+  border-radius: 10px;
 }
 
 .contact-form label {
